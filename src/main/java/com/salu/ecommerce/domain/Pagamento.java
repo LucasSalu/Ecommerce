@@ -48,7 +48,7 @@ public abstract class Pagamento implements Serializable { // ou um tabelão com 
 	}
 
 	public EstadoPagamento getEstado() {
-		return EstadoPagamento.toEnum(estado);
+		return EstadoPagamento.toEnum(this.estado);
 	}
 
 	public void setEstado(EstadoPagamento estado) {
